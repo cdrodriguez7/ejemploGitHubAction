@@ -26,7 +26,8 @@ jobs: #importante seguir la identación pues indica que es un paso
                 composer --version
             - name: Instalar MySQL
               run: |
-                choco install mysql --version=8.0
+                choco install mysql --version=8.0.27
+              
 
 
     test:
