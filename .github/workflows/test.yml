@@ -1,12 +1,13 @@
-name: Ejemplo CI/CD
+name: Ejemplo CI/CD #nombre del pipeline
 
-on: [push]
+on: [push] #disparador
 
-jobs:
-    inicio:
-      runs-on: windows-latest
-      #Pasos:
+jobs: #importante seguir la identación pues indica que es un paso
+    inicio: #puede ser cualquier nombre como conexion, conectar github a jenkins
+        runs-on: windows-latest
+        #Pasos:
         steps:
-          - name: mostrar texto
-            run: echo "Hola Mundo"
-    
+            - name: mostrar texto
+              run: echo "Hola Mundo"
+                
+   
